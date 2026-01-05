@@ -1,0 +1,61 @@
+{
+  "recordingEnabled": true,
+  "recordingConstraints": {
+    "maxDurationSeconds": 300,
+    "maxFileSizeMB": 100,
+    "minDurationSeconds": 5
+  },
+  "recordingRules": [
+    {
+      "ruleId": "EXP_KYC_VERIFICATION_Q1_2025",
+      "description": "Record KYC verification screens for Q1 2024 experiment",
+      "enabled": true,
+      "timeWindowRule": {
+        "startTime": "2025-10-01 00:00:00",
+        "endTime": "2025-11-30 23:59:59"
+      },
+      "appVersionRules": [
+        {
+          "platform": "android",
+          "operator": ">=",
+          "version": 500
+        },
+        {
+          "platform": "ios",
+          "operator": ">=",
+          "version": 500
+        }
+      ],
+      "platformRule": [
+        {
+          "platform": "android",
+          "minOSVersion": 0,
+          "maxOSVersion": 0,
+          "models": []
+        },
+        {
+          "platform": "ios",
+          "minOSVersion": 0,
+          "maxOSVersion": 0,
+          "models": []
+        }
+      ],
+      "loaAppConditions": {
+        "productTypes": [
+          "PERSONAL_LOAN",
+          "REPEAT",
+          "TOPUP"
+        ],
+        "startRule": {
+          "start": "REQ_CREDIT_CHECK",
+          "end": "SUBMITTED",
+          "type": "status"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "version": "1",
+    "lastUpdated": "2024-03-15T10:30:00Z"
+  }
+}
