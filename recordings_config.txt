@@ -47,9 +47,9 @@
           "TOPUP"
         ],
         "startRule": {
-          "start": "REQ_CREDIT_CHECK",
-          "end": "SUBMITTED",
-          "type": "status"
+          "start": "About Yourself",
+          "end": "SubmitSuccess",
+          "type": "screen"
         }
       }
     }
