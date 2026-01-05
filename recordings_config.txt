@@ -11,8 +11,8 @@
       "description": "Record KYC verification screens for Q1 2024 experiment",
       "enabled": true,
       "timeWindowRule": {
-        "startTime": "2025-10-01 00:00:00",
-        "endTime": "2025-11-30 23:59:59"
+        "startTime": "2026-01-01 00:00:00",
+        "endTime": "2026-01-31 23:59:59"
       },
       "appVersionRules": [
         {
