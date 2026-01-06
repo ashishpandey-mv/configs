@@ -41,11 +41,7 @@
         }
       ],
       "loaAppConditions": {
-        "productTypes": [
-          "PERSONAL_LOAN",
-          "REPEAT",
-          "TOPUP"
-        ],
+        "productTypes": [],
         "startRule": {
           "start": "About Yourself",
           "end": "SubmitSuccess",
