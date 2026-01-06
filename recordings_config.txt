@@ -17,24 +17,24 @@
         {
           "platform": "android",
           "operator": ">=",
-          "version": 649
+          "version": 648
         }
       ],
       "platformRule": [
         {
-          "platform": "ANDROID",
+          "platform": "android",
           "minOSVersion": 0,
           "maxOSVersion": 0,
           "models": []
         },
         {
-          "platform": "IOS",
+          "platform": "ios",
           "minOSVersion": 0,
           "maxOSVersion": 0,
           "models": []
         }
       ],
-      "userLevelConditions": {
+      "loaAppConditions": {
         "productTypes": [],
         "startRule": {
           "start": "Welcome",
