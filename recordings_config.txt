@@ -34,7 +34,7 @@
           "models": []
         }
       ],
-      "loaAppConditions": {
+      "userLevelConditions": {
         "productTypes": [],
         "startRule": {
           "start": "Welcome",
