@@ -37,7 +37,7 @@
       "userLevelConditions": {
         "productTypes": [],
         "startRule": {
-          "start": "About Yourself",
+          "start": "Welcome",
           "end": "SubmitSuccess",
           "type": "screen"
         }
