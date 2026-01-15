@@ -1,51 +1,75 @@
 {
-  "recordingEnabled": true,
-  "recordingConstraints": {
-    "maxDurationSeconds": 300,
-    "maxFileSizeMB": 100,
-    "minDurationSeconds": 5
+  "recordingEnabled" : true,
+  "recordingConstraints" : {
+    "maxDurationSeconds" : 300,
+    "maxFileSizeMB" : 100,
+    "minDurationSeconds" : 5
   },
-  "recordingRules": [
-    {
-      "ruleId": "WelcomeToSubmit",
-      "enabled": true,
-      "timeWindowRule": {
-        "startTime": "2026-01-06 17:40:00",
-        "endTime": "2026-01-15 20:55:00"
-      },
-      "appVersionRules": [
-        {
-          "platform": "android",
-          "operator": ">=",
-          "version": 648
-        }
-      ],
-      "platformRule": [
-        {
-          "platform": "android",
-          "minOSVersion": 0,
-          "maxOSVersion": 0,
-          "models": []
-        },
-        {
-          "platform": "ios",
-          "minOSVersion": 0,
-          "maxOSVersion": 0,
-          "models": []
-        }
-      ],
-      "userLevelConditions": {
-        "productTypes": [],
-        "startRule": {
-          "start": "Welcome",
-          "end": "SubmitSuccess",
-          "type": "screen"
-        }
+  "recordingRules" : [ {
+    "ruleId" : "WelcomeToSubmit",
+    "enabled" : true,
+    "timeWindowRule" : {
+      "startTime" : "2026-01-06 17:40:00",
+      "endTime" : "2026-01-06 20:55:00"
+    },
+    "appVersionRules" : [ {
+      "platform" : "android",
+      "operator" : ">=",
+      "version" : 649
+    } ],
+    "platformRule" : [ {
+      "platform" : "ANDROID",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    }, {
+      "platform" : "IOS",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    } ],
+    "userLevelConditions" : {
+      "productTypes" : [ "pl" ],
+      "startRule" : {
+        "start" : "Welcome",
+        "end" : "SubmitSuccess",
+        "type" : "screen"
       }
     }
-  ],
-  "metadata": {
-    "version": "78",
-    "lastUpdated": "2026-01-06 17:45:00"
+  }, {
+    "ruleId" : "UDRS_RCC_SUBMITTED",
+    "enabled" : true,
+    "timeWindowRule" : {
+      "startTime" : "2026-01-07 16:25:00",
+      "endTime" : "2026-01-10 00:00:00"
+    },
+    "appVersionRules" : [ {
+      "platform" : "android",
+      "operator" : ">=",
+      "version" : 648
+    } ],
+    "platformRule" : [ {
+      "platform" : "ANDROID",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    }, {
+      "platform" : "IOS",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    } ],
+    "userLevelConditions" : {
+      "productTypes" : [ "pl" ],
+      "startRule" : {
+        "start" : "REQ_CREDIT_CHECK",
+        "end" : "SUBMITTED",
+        "type" : "status"
+      }
+    }
+  } ],
+  "metadata" : {
+    "version" : "79",
+    "lastUpdated" : "2026-01-07 16:21:45"
   }
 }
