@@ -15,7 +15,7 @@
     "appVersionRules" : [ {
       "platform" : "android",
       "operator" : ">=",
-      "version" : 649
+      "version" : 650
     } ],
     "platformRule" : [ {
       "platform" : "ANDROID",
@@ -37,8 +37,39 @@
       }
     }
   }, {
-    "ruleId" : "UDRS_RCC_SUBMITTED",
+    "ruleId" : "1_UDRS_RCC_SUBMITTED",
     "enabled" : true,
+    "timeWindowRule" : {
+      "startTime" : "2026-01-15 17:55:00",
+      "endTime" : "2026-01-20 23:55:00"
+    },
+    "appVersionRules" : [ {
+      "platform" : "android",
+      "operator" : ">=",
+      "version" : 648
+    } ],
+    "platformRule" : [ {
+      "platform" : "ANDROID",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    }, {
+      "platform" : "IOS",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    } ],
+    "userLevelConditions" : {
+      "productTypes" : [ "pl" ],
+      "startRule" : {
+        "start" : "REQ_CREDIT_CHECK",
+        "end" : "SUBMITTED",
+        "type" : "status"
+      }
+    }
+  }, {
+    "ruleId" : "UDRS_RCC_SUBMITTED",
+    "enabled" : false,
     "timeWindowRule" : {
       "startTime" : "2026-01-07 16:25:00",
       "endTime" : "2026-01-10 00:00:00"
@@ -67,9 +98,226 @@
         "type" : "status"
       }
     }
+  }, {
+    "ruleId" : "Test",
+    "enabled" : true,
+    "timeWindowRule" : {
+      "startTime" : "2026-01-14 00:00:00",
+      "endTime" : "2026-01-21 00:00:00"
+    },
+    "appVersionRules" : [ {
+      "platform" : "ios",
+      "operator" : ">=",
+      "version" : 430
+    } ],
+    "platformRule" : [ {
+      "platform" : "ANDROID",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    }, {
+      "platform" : "IOS",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    } ],
+    "userLevelConditions" : {
+      "productTypes" : [ "topup" ],
+      "startRule" : {
+        "start" : "CREDIT_CHECK_MANUAL",
+        "end" : "LOAN_OVERVIEW",
+        "type" : "status"
+      }
+    }
+  }, {
+    "ruleId" : "test 2",
+    "enabled" : false,
+    "timeWindowRule" : {
+      "startTime" : "2026-01-27 14:35:00",
+      "endTime" : "2026-01-27 14:40:00"
+    },
+    "appVersionRules" : [ {
+      "platform" : "ios",
+      "operator" : ">=",
+      "version" : 545
+    } ],
+    "platformRule" : [ {
+      "platform" : "ANDROID",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    }, {
+      "platform" : "IOS",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    } ],
+    "userLevelConditions" : {
+      "productTypes" : [ "repeat" ],
+      "startRule" : {
+        "start" : "Welcome",
+        "end" : "Loan Overview",
+        "type" : "screen"
+      }
+    }
+  }, {
+    "ruleId" : "test 4",
+    "enabled" : true,
+    "timeWindowRule" : {
+      "startTime" : "2026-01-22 00:00:00",
+      "endTime" : "2026-01-28 00:00:00"
+    },
+    "appVersionRules" : [ {
+      "platform" : "android",
+      "operator" : ">=",
+      "version" : 543
+    } ],
+    "platformRule" : [ {
+      "platform" : "ANDROID",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    }, {
+      "platform" : "IOS",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    } ],
+    "userLevelConditions" : {
+      "productTypes" : [ "topup" ],
+      "startRule" : {
+        "start" : "LOAN_OVERVIEW",
+        "end" : "KYC_COMPLIANCE",
+        "type" : "status"
+      }
+    }
+  }, {
+    "ruleId" : "test5",
+    "enabled" : false,
+    "timeWindowRule" : {
+      "startTime" : "2026-01-09 20:19:00",
+      "endTime" : "2026-01-10 00:00:00"
+    },
+    "appVersionRules" : [ {
+      "platform" : "ios",
+      "operator" : ">=",
+      "version" : 43
+    } ],
+    "platformRule" : [ {
+      "platform" : "ANDROID",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    }, {
+      "platform" : "IOS",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    } ],
+    "userLevelConditions" : {
+      "productTypes" : [ "pl" ],
+      "startRule" : {
+        "start" : "VIDEO_KYC",
+        "end" : "LOAN_OVERVIEW",
+        "type" : "status"
+      }
+    }
+  }, {
+    "ruleId" : "test6",
+    "enabled" : false,
+    "timeWindowRule" : {
+      "startTime" : "2026-01-14 23:08:00",
+      "endTime" : "2026-01-17 23:08:00"
+    },
+    "appVersionRules" : [ {
+      "platform" : "ios",
+      "operator" : ">=",
+      "version" : 22
+    } ],
+    "platformRule" : [ {
+      "platform" : "ANDROID",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    }, {
+      "platform" : "IOS",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    } ],
+    "userLevelConditions" : {
+      "productTypes" : [ "pl" ],
+      "startRule" : {
+        "start" : "SubmitSuccess",
+        "end" : "Loan Overview",
+        "type" : "screen"
+      }
+    }
+  }, {
+    "ruleId" : "test 7",
+    "enabled" : true,
+    "timeWindowRule" : {
+      "startTime" : "2026-01-22 00:00:00",
+      "endTime" : "2026-01-30 00:00:00"
+    },
+    "appVersionRules" : [ {
+      "platform" : "android",
+      "operator" : ">=",
+      "version" : 455
+    } ],
+    "platformRule" : [ {
+      "platform" : "ANDROID",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    }, {
+      "platform" : "IOS",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    } ],
+    "userLevelConditions" : {
+      "productTypes" : [ "repeat" ],
+      "startRule" : {
+        "start" : "SubmitSuccess",
+        "end" : "Loan Overview",
+        "type" : "screen"
+      }
+    }
+  }, {
+    "ruleId" : "Retest",
+    "enabled" : false,
+    "timeWindowRule" : {
+      "startTime" : "2026-01-22 07:35:00",
+      "endTime" : "2026-01-23 07:35:00"
+    },
+    "appVersionRules" : [ {
+      "platform" : "android",
+      "operator" : ">=",
+      "version" : 679
+    } ],
+    "platformRule" : [ {
+      "platform" : "ANDROID",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    }, {
+      "platform" : "IOS",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    } ],
+    "userLevelConditions" : {
+      "productTypes" : [ "pl" ],
+      "startRule" : {
+        "start" : "OFFER_READY",
+        "end" : "KYC_COMPLIANCE",
+        "type" : "status"
+      }
+    }
   } ],
   "metadata" : {
-    "version" : "79",
-    "lastUpdated" : "2026-01-07 16:21:45"
+    "version" : "119",
+    "lastUpdated" : "2026-01-15 17:58:07"
   }
 }
