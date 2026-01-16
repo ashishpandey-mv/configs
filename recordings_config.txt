@@ -29,7 +29,7 @@
       "models" : [ ]
     } ],
     "userLevelConditions" : {
-      "productTypes" : [ "1" ],
+      "productTypes" : [ "-1" ],
       "startRule" : {
         "start" : "REQ_CREDIT_CHECK",
         "end" : "SUBMITTED",
@@ -60,7 +60,7 @@
       "models" : [ ]
     } ],
     "userLevelConditions" : {
-      "productTypes" : [ "1" ],
+      "productTypes" : [ "-1" ],
       "startRule" : {
         "start" : "Welcome",
         "end" : "SubmitSuccess",
