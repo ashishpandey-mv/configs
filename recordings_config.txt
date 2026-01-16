@@ -36,9 +36,40 @@
         "type" : "status"
       }
     }
+  }, {
+    "ruleId" : "ScreenName1_Welcome_SubmitSuccess",
+    "enabled" : true,
+    "timeWindowRule" : {
+      "startTime" : "2026-01-16 16:55:00",
+      "endTime" : "2026-01-23 23:55:00"
+    },
+    "appVersionRules" : [ {
+      "platform" : "android",
+      "operator" : ">=",
+      "version" : 648
+    } ],
+    "platformRule" : [ {
+      "platform" : "ANDROID",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    }, {
+      "platform" : "IOS",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    } ],
+    "userLevelConditions" : {
+      "productTypes" : [ "1" ],
+      "startRule" : {
+        "start" : "Welcome",
+        "end" : "SubmitSuccess",
+        "type" : "screen"
+      }
+    }
   } ],
   "metadata" : {
-    "version" : "120",
-    "lastUpdated" : "2026-01-16 16:52:55"
+    "version" : "121",
+    "lastUpdated" : "2026-01-16 17:28:51"
   }
 }
