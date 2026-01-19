@@ -41,7 +41,7 @@
     "enabled" : true,
     "timeWindowRule" : {
       "startTime" : "2026-01-19 15:15:00",
-      "endTime" : "2026-01-19 18:30:00"
+      "endTime" : "2026-01-19 17:30:00"
     },
     "appVersionRules" : [ {
       "platform" : "android",
