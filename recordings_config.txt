@@ -36,9 +36,40 @@
         "type" : "screen"
       }
     }
+  }, {
+    "ruleId" : "Screenname2_Aboutyourself_submitsuccess",
+    "enabled" : true,
+    "timeWindowRule" : {
+      "startTime" : "2026-01-19 15:15:00",
+      "endTime" : "2026-01-19 18:30:00"
+    },
+    "appVersionRules" : [ {
+      "platform" : "android",
+      "operator" : ">=",
+      "version" : 648
+    } ],
+    "platformRule" : [ {
+      "platform" : "ANDROID",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    }, {
+      "platform" : "IOS",
+      "minOSVersion" : 0,
+      "maxOSVersion" : 0,
+      "models" : [ ]
+    } ],
+    "userLevelConditions" : {
+      "productTypes" : [ "-1" ],
+      "startRule" : {
+        "start" : "About Yourself",
+        "end" : "SubmitSuccess",
+        "type" : "screen"
+      }
+    }
   } ],
   "metadata" : {
-    "version" : "122",
-    "lastUpdated" : "2026-01-19 11:32:30"
+    "version" : "123",
+    "lastUpdated" : "2026-01-19 15:20:22"
   }
 }
