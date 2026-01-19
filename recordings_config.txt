@@ -6,10 +6,10 @@
     "minDurationSeconds" : 5
   },
   "recordingRules" : [ {
-    "ruleId" : "1_UDRS_RCC_SUBMITTED",
+    "ruleId" : "Screenname1_SHScreen_SubmitSuccess",
     "enabled" : true,
     "timeWindowRule" : {
-      "startTime" : "2026-01-16 16:50:00",
+      "startTime" : "2026-01-19 11:30:00",
       "endTime" : "2026-01-23 23:55:00"
     },
     "appVersionRules" : [ {
@@ -31,45 +31,14 @@
     "userLevelConditions" : {
       "productTypes" : [ "-1" ],
       "startRule" : {
-        "start" : "REQ_CREDIT_CHECK",
-        "end" : "SUBMITTED",
-        "type" : "status"
-      }
-    }
-  }, {
-    "ruleId" : "ScreenName1_Welcome_SubmitSuccess",
-    "enabled" : true,
-    "timeWindowRule" : {
-      "startTime" : "2026-01-16 16:55:00",
-      "endTime" : "2026-01-23 23:55:00"
-    },
-    "appVersionRules" : [ {
-      "platform" : "android",
-      "operator" : ">=",
-      "version" : 648
-    } ],
-    "platformRule" : [ {
-      "platform" : "ANDROID",
-      "minOSVersion" : 0,
-      "maxOSVersion" : 0,
-      "models" : [ ]
-    }, {
-      "platform" : "IOS",
-      "minOSVersion" : 0,
-      "maxOSVersion" : 0,
-      "models" : [ ]
-    } ],
-    "userLevelConditions" : {
-      "productTypes" : [ "-1" ],
-      "startRule" : {
-        "start" : "Welcome",
+        "start" : "SuperHomeScreen",
         "end" : "SubmitSuccess",
         "type" : "screen"
       }
     }
   } ],
   "metadata" : {
-    "version" : "121",
-    "lastUpdated" : "2026-01-16 17:28:51"
+    "version" : "122",
+    "lastUpdated" : "2026-01-19 11:32:30"
   }
 }
